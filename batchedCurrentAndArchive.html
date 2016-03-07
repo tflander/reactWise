@@ -15,8 +15,15 @@
     <script type="text/babel">
 
 var data = {"queued": ["121-C", "122-C"], "current": ["122-C"], "archive": ["124-C", "123-C"]};
+
+// This verifies that queued batches are optional
 // var data = {"current": ["122-C"], "archive": ["124-C", "123-C"]};
+
+// This verifies that the current batch is also optional
 // var data = {"archive": ["124-C", "123-C"]};
+
+// TODO #1: define a JSON object to represent the dashboard overview.  Scroll down to TODO #2: when done.
+      Hint:  A dashboard overview is a list of status items.  You can use a JSON array instead of a JSON object.
 
 var BatchList = React.createClass({
   render: function() {
@@ -59,7 +66,12 @@ var BatchGroups = React.createClass({
     );
   }
 });
-    
+
+// TODO #2:  Replace the BatchGroups JSX tags with a new Dashboard Overview JSX tag
+//           Use the data that you defined earlier in TODO #1.
+//  Hint:  Assuming you used a JSON object, your new tag will look a lot like the BatchList
+//            JSX tag, rendering a table and mapping each status item to a table row (tr tag).
+//  Hint:  You can do all the rendering in this JSX tag.  This is actually simpler than the original example. 
 ReactDOM.render(
  <BatchGroups data={data} />,
   document.getElementById('content')
