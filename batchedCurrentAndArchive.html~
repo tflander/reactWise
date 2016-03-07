@@ -25,13 +25,10 @@ var data = {"queued": ["121-C", "122-C"], "current": ["122-C"], "archive": ["124
 
 // TODO #1: define a JSON object to represent the dashboard overview.  Scroll down to TODO #2: when done.
 //    Hint:  A dashboard overview is a list of status items.  You can use a JSON array instead of a JSON object.
-//    Hint:  Refer to DashboardOverviewBuilder.java and DashboardStatusItem.java.  We don't need to model the 
-//             rules enforced by the DashboardOverviewBuilder, we just need two or more dashboard status items.
+//    Hint:  Refer to DashboardOverviewBuilder.java and DashboardStatusItem.java
 
 // Hint: review the react JSX classes from the top down.  Scroll down to the ReactDOM.render call and go up 
 //    from there.
-
-
 var BatchList = React.createClass({
   render: function() {
     var batchNodes = this.props.data.map(function(batch) {
