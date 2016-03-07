@@ -18,6 +18,7 @@ Once you have the JSON for the dashboard overview, use React JS to render HTML a
 
 Here is the HTML you need to render:
 
+```
 <table class="dashboard">
 		<tbody><tr><th colspan="3">Overview</th></tr>
 		
@@ -113,3 +114,4 @@ Here is the HTML you need to render:
 		   </tr>
 		
 	</tbody></table>
+	```
